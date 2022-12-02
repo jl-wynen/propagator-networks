@@ -1,3 +1,9 @@
+"""
+Fahrenheit-Celsius-Kelvin convertor using plain numbers as cell content.
+
+Sections 3.1 and 3.2
+"""
+
 from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Callable
