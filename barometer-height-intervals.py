@@ -73,14 +73,11 @@ class Interval:
     def __add__(self, other):
         return Interval(self.lo + other.lo, self.hi + other.hi)
 
-    def __sub__(self, other):
-        return Interval(self.lo - other.lo, self.hi - other.hi)
-
     def __mul__(self, other):
         return Interval(self.lo * other.lo, self.hi * other.hi)
 
     def __truediv__(self, other):
-        return Interval(self.lo / other.lo, self.hi / other.hi)
+        return Interval(self.lo / other.hi, self.hi / other.lo)
 
     def __pow__(self, power):
         return Interval(self.lo ** 2, self.hi ** 2)
