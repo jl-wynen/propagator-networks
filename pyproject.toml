@@ -1,0 +1,9 @@
+[project]
+name = "propnet"
+license = { "file" = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "jupyterlab",
+]
+version = "1.0"
